@@ -1,0 +1,25 @@
+
+<div class="form">
+    <article class="card-body">
+        <h4 class="card-title text-center mb-4 mt-1">Sign in</h4>
+        <hr>
+        <form>
+        <div class="form-group">
+        <div class="input-group">
+            
+            <input [(ngModel)]="loginForm.username" name="username" class="form-control" placeholder="Username" type="text">
+        </div> 
+        </div> 
+        <div class="form-group">
+        <div class="input-group">
+            
+            <input [(ngModel)]="loginForm.password" name="password" class="form-control" placeholder="Password" type="password">
+        </div>
+        </div>
+        <div class="form-group">
+        <button (click)="Login(loginForm)" class="btn btn-primary btn-block"> Login  </button>
+        </div>
+        <p class="text-center"><a (click)="goToRegister()" class="btn">New here? Sig-in!</a></p>
+        </form>
+    </article>
+    </div>
