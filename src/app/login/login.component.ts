@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   Login(form: LoginI) {
     this.api.Login(form).subscribe(data =>  {
       console.log(data);
+      this.router.navigate(["homeScreen"])
     });
   }
 
